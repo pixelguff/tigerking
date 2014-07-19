@@ -21,14 +21,14 @@ function init_stuff() {
 	}
  
 	GameMap.prototype = {
-		importMap : function (filename){
+		importMap: function (filename){
 			// Read in map data
 			// Put each entry in this.map[x][y]
-		}
+		},
 		checkinRoom : function (room){
 			this.rooms.push(room);
-		}
-		getCurrentRoom : function (){
+		},
+		getCurrentRoom: function (){
 			return this.currentlocation;
 		}
 	}
