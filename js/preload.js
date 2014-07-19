@@ -1,5 +1,5 @@
 function preload() {
 
-	GameMap = init_stuff();
+	GameMap = init_GameMap();
 
 }

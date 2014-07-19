@@ -1,4 +1,4 @@
-function init_stuff() {
+function init_GameMap() {
 	
 	function GameMap (){
 		this.map = [
