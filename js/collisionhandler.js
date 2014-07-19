@@ -1,10 +1,9 @@
 function collisionHandler (obj1, obj2) {
 
-    //  The two sprites are colliding
-    //game.stage.backgroundColor = '#992d2d';
+	// This is from flappy dick. It might be handy later.
 
-	crashed = true;
-	crash.play('');
+  	//crashed = true;
+	//crash.play('');
 	
 
 }
