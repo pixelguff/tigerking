@@ -18,6 +18,7 @@ function init_GameMap() {
 		this.currentx = 5;
 		this.currentlocation = this.map[this.currentx][this.currenty];
 							// FIXME: The X/Y is arse about face
+							// This is a comment
 							
 		this.rooms = [];	// empty array to hold room objects
 							// Room should have id that corresponds to
