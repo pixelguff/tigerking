@@ -1,5 +1,7 @@
 function create() {
 	
+	
+	
 	tigerMap = new GameMap;
 	
 	//var style = { font: "12px Arial", fill: "#ffffff", align: "left" };
@@ -22,8 +24,16 @@ function create() {
 	//winkle.animations.add('fall',[1]);
 
 	//text = game.add.text(5, game.world.height-18, "Press the SPACE BAR to flap the flappy dick", style);
-	//scoretext = game.add.text(5, 5, tigerMap.getCurrentLocation, scorestyle);
-	scoretext = game.add.text(5, 5, 'fart', scorestyle);
+	var pissflaps = tigerMap.getCurrentLocation();
+	scoretext = game.add.text(5, 5, '0', scorestyle);
+	scoretext.text = pissflaps;
+	
+	
+
+	
+	
+	
+	//scoretext = game.add.text(5, 5, 'fart', scorestyle);
 	//statustext = game.add.text(game.world.centerX-200, game.world.centerY-50, 'PRESS SPACE\nTO PLAY\nFLAPPY DICK', statusstyle);
 
 	
@@ -60,3 +70,5 @@ function create() {
 	//wallbottom2.body.immovable = true;
 		
 }
+
+

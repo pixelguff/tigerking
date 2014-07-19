@@ -1,4 +1,36 @@
 function update() {
+	
+	moveLeft = game.input.keyboard.addKey(Phaser.Keyboard.LEFT);
+	moveLeft.onDown.add(tryFlip, this);
+	moveRight = game.input.keyboard.addKey(Phaser.Keyboard.RIGHT);
+	moveRight.onDown.add(tryFlip, this);
+	moveUp = game.input.keyboard.addKey(Phaser.Keyboard.UP);
+	moveUp.onDown.add(tryFlip, this);
+	moveDown = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
+	moveDown.onDown.add(tryFlip, this);
+	
+	//var direction = null;
+	
+	//if (game.input.keyboard.justPressed(Phaser.Keyboard.LEFT)) {
+			//direction = "left";
+	//}
+	//if (game.input.keyboard.justPressed(Phaser.Keyboard.RIGHT)) {
+			//direction = "right";
+	//}
+	//if (game.input.keyboard.justPressed(Phaser.Keyboard.UP)) {
+			//direction = "up";
+	//}
+	//if (game.input.keyboard.justPressed(Phaser.Keyboard.DOWN)) {
+			//direction = "down";
+	//}
+	
+	//if (direction != null) {
+		//tigerMap.flip(direction);
+		//scoretext.text = tigerMap.getCurrentLocation();
+	//}
+	
+	//direction = null;
+	
 	//// init stuff
 	//if (start == true) {
 		//start = false;
@@ -118,4 +150,23 @@ function update() {
 		//}
 	//}
      
+}
+
+function tryFlip(key) {
+	//scoretext.text = "I GOT HERE"
+	switch(key.keyCode) {
+		case Phaser.Keyboard.LEFT:
+			tigerMap.flip("left");
+			break;					
+		case Phaser.Keyboard.RIGHT:
+			tigerMap.flip("right");
+			break;					
+		case Phaser.Keyboard.UP:
+			tigerMap.flip("up");
+			break;					
+		case Phaser.Keyboard.DOWN:
+			tigerMap.flip("down");
+			break;
+		}
+	scoretext.text = tigerMap.getCurrentLocation();
 }
