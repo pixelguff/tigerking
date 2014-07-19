@@ -1,6 +1,9 @@
 function create() {
+	
+	tigerMap = new GameMap;
+	
 	//var style = { font: "12px Arial", fill: "#ffffff", align: "left" };
-	//var scorestyle = { font: "40px Arial", fill: "#ffffff", align: "left" };
+	var scorestyle = { font: "40px Arial", fill: "#ffffff", align: "left" };
 	//var statusstyle = { font: "65px Arial", fill: "#ff0000", align: "center" };
 	
 	//game.physics.startSystem(Phaser.Physics.ARCADE);
@@ -19,7 +22,7 @@ function create() {
 	//winkle.animations.add('fall',[1]);
 
 	//text = game.add.text(5, game.world.height-18, "Press the SPACE BAR to flap the flappy dick", style);
-	//scoretext = game.add.text(5, 5, 'SCORE IS 0', scorestyle);
+	scoretext = game.add.text(5, 5, tigerMap.getCurrentLocation, scorestyle);
 	//statustext = game.add.text(game.world.centerX-200, game.world.centerY-50, 'PRESS SPACE\nTO PLAY\nFLAPPY DICK', statusstyle);
 
 	
