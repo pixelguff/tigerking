@@ -1,13 +1,13 @@
 function init_Room() {
 	
-	function Room (id, name){
-		this.id = id;
-		this.name = name;
-		this.background = game.load.image('background'+id, 'assets/bg/'+id+'.png');
+	function Room (){
+		this.id;
+		this.name;
+		this.background;
 		return this;
 	}
  
-	GameMap.prototype = {
+	Room.prototype = {
 		getId : function (){
 			return this.id;
 		},
@@ -16,6 +16,15 @@ function init_Room() {
 		},
 		getBackground : function (){
 			return this.background;
+		},
+		setId : function (id){
+			this.id = id;
+		},
+		setName : function (name){
+			this.name =  name;
+		},
+		setBackground : function (background){
+			this.background = background;
 		}		
 	}
 	

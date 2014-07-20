@@ -9,6 +9,8 @@ function update() {
 	moveDown = game.input.keyboard.addKey(Phaser.Keyboard.DOWN);
 	moveDown.onDown.add(tryFlip, this);
 	
+	//game.add.sprite(0,0,'twatslap');
+	
 }
 
 function tryFlip(key) {
