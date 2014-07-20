@@ -1,3 +1,11 @@
+game = new Phaser.Game(256, 192, Phaser.AUTO, 'the-game');
+
+player
+
+TigerKing = {}; 
+
+TigerKing.StartScreen = function(){ };
+
 TigerKing.StartScreen.prototype = {
     preload : function(){
     // load basic assets for this state
@@ -10,7 +18,7 @@ TigerKing.StartScreen.prototype = {
  
     // place the assets and elements in their initial positions, create the state
  
-    this.titleScreen = this.add.sprite(300,300,'startbg');
+    this.titleScreen = this.add.sprite(0,0,'startbg');
  
 	theme = game.add.audio('theme',1,true,true);
 	theme.play('');
