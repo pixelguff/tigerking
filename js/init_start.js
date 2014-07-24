@@ -4,7 +4,7 @@ TigerKing.StartScreen.prototype = {
     preload : function(){
     // load basic assets for this state
     
-    this.scale.maxWidth = 1024;
+	this.scale.maxWidth = 1024;
 	this.scale.maxHeight = 768;
 	this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 	this.scale.setScreenSize();

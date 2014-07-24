@@ -1,6 +1,8 @@
 game = new Phaser.Game(256, 192, Phaser.AUTO, 'the-game');
 
-dogdicks = 'penis';
+// load tk himself
+
+//dogdicks = 'penis';
 
 //player
 
