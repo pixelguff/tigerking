@@ -4,8 +4,8 @@ TigerKing.StartScreen.prototype = {
     preload : function(){
     // load basic assets for this state
     
-	this.scale.maxWidth = 1024;
-	this.scale.maxHeight = 768;
+	this.scale.maxWidth = 800;
+	this.scale.maxHeight = 600;
 	this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
 	this.scale.setScreenSize();
     
@@ -40,3 +40,4 @@ game.state.add('StartScreen',TigerKing.StartScreen);
 
 
 game.state.start('StartScreen'); 
+//game.state.start('room1'); 
